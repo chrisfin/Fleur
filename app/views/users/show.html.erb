@@ -1,2 +1,22 @@
-<%= @user.email %> </br>
-<%= @user.user_url %>
+<%= render 'users/top' %>
+	<div id="show" class="span6">
+	
+		<h2>Sucess!</br> The Style Elves are on it. </h2>
+		<h3>You'll get an email with your item shortly.</h3>
+
+			<!-- I got these buttons from simplesharebuttons.com -->
+			<div id="share-buttons">
+ 
+				<!-- Facebook -->
+				<%= link_to image_tag("facebook.png"), "http://www.facebook.com/sharer.php?u=http://www.shopfleur.co/", :target => "_blank" %>
+
+				<!-- Twitter -->
+				<%= link_to image_tag("twitter.png"), "http://twitter.com/share?url=http://www.shopfleur.co/&text=The Fleur Style Elves are finding me something beautiful. I wonder what they'd find for you?", :target => "_blank" %>
+
+			 	<!-- Email -->
+				<%= link_to image_tag("email.png"), "mailto:?Subject=Have you tried Fleur, yet?&Body=The%20Fleur%20Style%20Elves%20are%20finding%20me%20something%20beautiful.%20I%20wonder%20what%20they%20would%20find%20for%20you? http://www.shopfleur.co/" %>
+
+			</div>
+
+	</div>
+<%= render 'users/bottom' %>

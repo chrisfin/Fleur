@@ -11,7 +11,6 @@ $grayMediumLight: #eaeaea;
 }
 
 
-
 /* header */
 
 .page-header {
@@ -29,9 +28,21 @@ $grayMediumLight: #eaeaea;
 	float: right
 }
 
-.span3 {
+#show {
 
-	float: left;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.brand {
+  color: $black;
+  letter-spacing: -1px;
+  line-height: 1;
+&:hover {
+  color: #545454;
+  text-decoration: none;
+	}
+
 }
 
 h2 {
@@ -50,6 +61,23 @@ h3 {
 	padding: 5px;
 }
 
+/* Added to support simple share buttons */
+#share-buttons {
+	padding-top: 25px;
+	width: 150px;
+	margin: 0px auto;
+}
+ 
+#share-buttons img {
+	width: 35px;
+	padding: 5px;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
+	margin-right: auto;
+  margin-left: auto;
+}
+
 /* footer */
 
 footer {
@@ -57,7 +85,9 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999;
+
 }
+
 
 /* forms */
 
