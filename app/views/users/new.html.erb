@@ -1,16 +1,17 @@
 <div class="row">
-  <div class="span2"></div>
-  	<div id="form" class="span7">
-  	<h3>Copy and paste a link to a look you love</h2>
+  <div class="span3"><%= image_tag("trunk.jpg") %></div>
+  	<div id="form" class="span6">
+  		<h2>Find beautiful clothes you never knew you needed</h2>
+  		<h3>Copy and paste a link to a style you love</h2>
   		<%= form_for(@user) do |f| %>
 
-      <%= f.text_field :user_url, placeholder: 'www.zappos.com/frye-boots-brown' %>
+      <%= f.text_field :user_url, placeholder: 'Example: www.zappos.com/frye-boots-brown' %>
 
-      <h3>Fleur will pick something special just for you</h3>
+      <h3>Fleur will pick one special item just for you</h3>
    
       <%= f.text_field :email, placeholder: 'Enter your Email' %></br>
 
-      <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+      <%= f.submit "Send My Style", class: "btn btn-large btn-primary" %>
     <% end %>
   		
   	</div>
