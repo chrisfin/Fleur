@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:600|);
 $btnPrimaryBackground: Green;
 
 /* mixins, variables, etc. */
@@ -10,23 +11,22 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
-
 /* header */
 
 .page-header {
 	padding-left: 60px;
+	 font-family: 'Crimson Text', serif;
 }
 
 .logo {
 	float: left;
 	margin-right: 8px;
+
 }
 
 /* Main */
 
-#main_right {
-	float: right
-}
+
 
 #show {
 
@@ -35,14 +35,15 @@ $grayMediumLight: #eaeaea;
 }
 
 .brand {
+  font-size: 44px;
   color: $black;
   letter-spacing: -1px;
   line-height: 1;
+  font-family: 'Crimson Text', serif;
 &:hover {
   color: #545454;
   text-decoration: none;
 	}
-
 }
 
 h2 {
@@ -81,19 +82,29 @@ h3 {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 20px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999;
-
+  padding-left: 60px;
+  font-size: 12px;
 }
 
+footer a {
+
+&:hover {
+  color: black;
+  text-decoration: none;
+}
+}
 
 /* forms */
 
 #form{
 	padding-top: 30px;
 	text-align: center;
+	margin: 0px auto;
+	
 }
 
 input, textarea, select, .uneditable-input {
@@ -105,4 +116,34 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+.btn-custom {
+  background-color: hsl(41, 76%, 35%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e5b346", endColorstr="#9d7215");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#e5b346), to(#9d7215));
+  background-image: -moz-linear-gradient(top, #e5b346, #9d7215);
+  background-image: -ms-linear-gradient(top, #e5b346, #9d7215);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5b346), color-stop(100%, #9d7215));
+  background-image: -webkit-linear-gradient(top, #e5b346, #9d7215);
+  background-image: -o-linear-gradient(top, #e5b346, #9d7215);
+  background-image: linear-gradient(#e5b346, #9d7215);
+  border-color: #9d7215 #9d7215 hsl(41, 76%, 29%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.39);
+  -webkit-font-smoothing: antialiased;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
 }

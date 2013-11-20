@@ -1,16 +1,19 @@
-<%= render 'users/top' %>
+<div class="row">
+  <div id="mainleft" class="span3"><%= image_tag("trunk.jpg") %></div>
   	<div id="form" class="span6">
   		<h2>Fleur finds clothes you didn't know you had to own</h2>
   		<h3>Copy and paste a link to a style you love</h3>
   			<%= form_for(@user) do |f| %>
-
+        <%= render 'shared/error_messages' %>
       		<%= f.text_field :user_url, placeholder: 'Example: www.zappos.com/frye-boots-brown' %>
 
       	<h3>Fleur will pick one special item just for you</h3>
    
       		<%= f.text_field :email, placeholder: 'Enter your Email' %></br>
 
-      		<%= f.submit "Send My Style", class: "btn btn-large btn-primary" %>
+      		<%= f.submit "Send My Style", class: "btn btn-custom btn-large" %>
     		<% end %>
-  	</div>
- <%= render 'users/bottom' %>
+    </div>
+<div id="mainright" class="span3"><%= image_tag("white-orchid.jpg") %></div>
+</div>
+      
